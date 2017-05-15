@@ -9,6 +9,6 @@ public class SimpleRestService {
     @Path("/")
     @GET
     public String GetRootResource(){
-        return "hello version 2!";
+        return "hello version 3!";
     }
 }
