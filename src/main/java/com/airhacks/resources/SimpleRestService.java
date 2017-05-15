@@ -9,6 +9,6 @@ public class SimpleRestService {
     @Path("/")
     @GET
     public String GetRootResource(){
-        return "hello version 3!";
+        return "hello version 4, from " + System.getenv("HOSTNAME");
     }
 }
