@@ -10,13 +10,13 @@ public class SimpleRestService {
     @Path("/")
     @GET
     public String GetRootResource(){
-        return "hello world. From " + System.getenv("HOSTNAME");
+        return "hello world! From " + System.getenv("HOSTNAME");
     }
 
     @Path("/ping")
     @GET
     public String GetPing() {
-        throw new HTTPException(500);
-        //return "pong";
+        //throw new HTTPException(500);
+        return "pong";
     }
 }
