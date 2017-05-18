@@ -2,6 +2,7 @@ package com.airhacks.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.xml.ws.http.HTTPException;
 
 @Path("/test")
 public class SimpleRestService {
@@ -15,6 +16,7 @@ public class SimpleRestService {
     @Path("/ping")
     @GET
     public String GetPing() {
-        return "pong";
+        throw new HTTPException(500);
+        //return "pong";
     }
 }
