@@ -11,4 +11,10 @@ public class SimpleRestService {
     public String GetRootResource(){
         return "hello world! From " + System.getenv("HOSTNAME");
     }
+
+    @Path("/ping")
+    @GET
+    public String GetPing() {
+        return "pong";
+    }
 }
