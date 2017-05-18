@@ -16,7 +16,7 @@ public class SimpleRestService {
     @Path("/ping")
     @GET
     public String GetPing() {
-        throw new HTTPException(500);
-        //return "pong";
+        //throw new HTTPException(500);
+        return "pong";
     }
 }
