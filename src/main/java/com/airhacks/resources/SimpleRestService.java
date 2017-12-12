@@ -10,7 +10,7 @@ public class SimpleRestService {
     @Path("/")
     @GET
     public String GetRootResource(){
-        return "hello world! From " + System.getenv("HOSTNAME") + System.lineSeparator();
+        return "hello world!! From " + System.getenv("HOSTNAME") + System.lineSeparator();
     }
 
     @Path("/ping")
